@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Comparator;
 import java.util.Arrays;
 
-public class b11650 {
+public class b11650 { //
     static class Point{
         int a;
         int b;
