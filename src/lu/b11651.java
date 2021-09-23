@@ -1,4 +1,4 @@
-package ebaekfifty_one;
+package lu;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class lu_coord2 {
+public class b11651 {
     static class Point{
         int a;
         int b;
@@ -17,16 +17,16 @@ public class lu_coord2 {
             this.a = a;
             this.b = b;
         }
-        static Comparator<Point> x  = new Comparator<Point>() {
+        static Comparator<b11651.Point> x  = new Comparator<b11651.Point>() {
             @Override
-            public int compare(Point o1, Point o2) {
+            public int compare(b11651.Point o1, b11651.Point o2) {
                 return o1.a - o2.a;
             }
         };
 
-        static Comparator<Point> y = new Comparator<Point>() {
+        static Comparator<b11651.Point> y = new Comparator<b11651.Point>() {
             @Override
-            public int compare(Point o1, Point o2) {
+            public int compare(b11651.Point o1, b11651.Point o2) {
                 return o1.b - o2.b;
             }
         };
@@ -38,7 +38,7 @@ public class lu_coord2 {
 
         int n = Integer.parseInt(br.readLine());
 
-        Point[] points = new Point[n];
+        b11651.Point[] points = new b11651.Point[n];
 
         for (int i = 0; i < n; i++) {
             String str = br.readLine();
@@ -47,11 +47,11 @@ public class lu_coord2 {
             int c = Integer.parseInt(s[0]);
             int d = Integer.parseInt(s[1]);
 
-            points[i] = new Point(c,d);
+            points[i] = new b11651.Point(c,d);
         }
 
-        Arrays.sort(points, Point.x);
-        Arrays.sort(points, Point.y);
+        Arrays.sort(points, b11651.Point.x);
+        Arrays.sort(points, b11651.Point.y);
 
         for (int i = 0; i < n; i++) {
             bw.write(Integer.toString(points[i].a) + ' ');

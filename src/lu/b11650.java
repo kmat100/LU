@@ -1,10 +1,10 @@
-package dbaekfifty;
+package lu;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Arrays;
 
-public class lu_coord {
+public class b11650 {
     static class Point{
         int a;
         int b;
@@ -30,6 +30,7 @@ public class lu_coord {
     }
 
     public static void main(String[] args) throws IOException{
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
@@ -39,7 +40,7 @@ public class lu_coord {
 
         for (int i = 0; i < n; i++) {
             String str = br.readLine();
-            s = str.split(" ");
+            s = str.split( " ");
 
             int c = Integer.parseInt(s[0]);
             int d = Integer.parseInt(s[1]);
@@ -50,7 +51,6 @@ public class lu_coord {
         Arrays.sort(array, Point.x);
 
         for (int i = 0; i < n; i++) {
-
             bw.write(Integer.toString(array[i].a));
             bw.write(" ");
             bw.write(Integer.toString(array[i].b));
