@@ -3,7 +3,7 @@ package lu;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class b2750 { 
+public class b2750 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
