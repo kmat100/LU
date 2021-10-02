@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class b11651 {  // 
+public class b11651 {  //
     static class Point{
         int a;
         int b;
